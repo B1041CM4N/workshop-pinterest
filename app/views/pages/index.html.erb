@@ -1,9 +1,9 @@
 <h1 class="col-md-12 align-center"> Pinterest - workshop ROR</h1>
 <div class="jumbotron">
     <h2 class="col-md-12">Titulo 2</h2>
-    <a href="https://encrypted.google.com">
-        <img src="http://media.riffsy.com/images/f1d3ed64627b5bc61278dd56cefe4a7f/tenor.gif" alt="foto">
-    </a>
+    <%= link_to "https://encrypted.google.com" do %>
+        <%= image_tag 'http://media.riffsy.com/images/f1d3ed64627b5bc61278dd56cefe4a7f/tenor.gif', alt: "foto" %>
+    <% end %>
 </div>
 
 <p class="col-md-4">
