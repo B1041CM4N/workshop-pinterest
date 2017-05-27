@@ -14,7 +14,8 @@
   <tbody>
     <% @pins.each do |pin| %>
       <tr>
-        <td><%= pin.photo %></td>
+        <!-- <td><%#= image_tag(pin.photo) %></td> -->
+        <td><img src="<%= pin.photo %>" alt="<%= pin.description %>"></td>
         <td><%= pin.description %></td>
         <td><%= link_to 'Show', pin %></td>
         <td><%= link_to 'Edit', edit_pin_path(pin) %></td>
